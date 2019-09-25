@@ -84,7 +84,7 @@ body {
 }
 
 .poweredby {
-    color: #6d6d6d;
+    color: #b8b8b8;
     font-size: 14px;
 }
 
@@ -142,6 +142,18 @@ body {
     background: linear-gradient(83deg, rgba(58, 44, 129, 1) 0%, rgba(147, 33, 59, 1) 100%);
 }
 
+.overlay2 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.5;
+    background-color: #1e1e1eee
+}
+
 .section-who {
     color: #fff;
     background: url("../img/home-banner.jpg") center no-repeat;
@@ -157,6 +169,47 @@ body {
     background: url("../img/home-banner.jpg") center no-repeat;
 }
 
+.modal-style {
+    border: 2px solid #fff;
+    background: url("../img/home-banner.jpg") center;
+}
+
+.modal-style li {
+    list-style-type: circle;
+    color: #fff;
+}
+
+.modal-style a {
+    color: #fff;
+}
+
+.modal-style a:hover {
+    color: #eaeaea;
+    text-decoration: none;
+}
+
+.modal-close {
+    position: absolute;
+    right: 10px;
+}
+
+.modal-close span {
+    color: #fff;
+}
+
+.fade-scale {
+    transform: scale(0);
+    opacity: 0;
+    -webkit-transition: all .25s linear;
+    -o-transition: all .25s linear;
+    transition: all .25s linear;
+}
+
+.fade-scale.in {
+    opacity: 1;
+    transform: scale(1);
+}
+
 @media (max-width: 991.98px) {
     .sidenav {
         display: none;
@@ -167,5 +220,12 @@ body {
     .mob-nav a {
         color: #1e1e1e;
         font-size: 20px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .modal-close {
+        position: fixed;
+        right: 15px;
     }
 }
